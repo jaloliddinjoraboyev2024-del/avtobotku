@@ -39,6 +39,10 @@ API_HASH = _get_str("API_HASH", required=True)
 # Sizning shaxsiy akkauntingiz raqami (masalan +998901234567)
 PHONE = _get_str("PHONE", default="")
 
+# Guruhda sizning xabaringizga reply kelganda bildirishnoma yuboriladigan
+# manzil (@username yoki "me" — o'zingizning Saved Messages'ingiz).
+NOTIFY_TARGET = _get_str("NOTIFY_TARGET", default="me")
+
 # @BotFather orqali yaratilgan boshqaruv boti tokeni
 BOT_TOKEN = _get_str("BOT_TOKEN", required=True)
 

@@ -295,3 +295,72 @@
 2026-08-25 12:51:33,933 [INFO] telethon.network.mtprotosender: Disconnecting from 149.154.167.51:443/TcpFull...
 2026-08-25 12:51:33,939 [INFO] telethon.network.mtprotosender: Disconnection from 149.154.167.51:443/TcpFull complete!
 2026-08-25 12:51:33,946 [INFO] telethon.network.mtprotosender: Disconnection from 149.154.167.51:443/TcpFull complete!
+2026-08-30 09:59:13,712 [ERROR] main: handle_avto_command xato
+Traceback (most recent call last):
+  File "/home/claude/work/telegram_userbot/main.py", line 85, in handle_avto_command
+    raise ValueError("4 ta qism kerak: chatlar | matn | soni | sekund")
+ValueError: 4 ta qism kerak: chatlar | matn | soni | sekund
+2026-08-30 10:00:15,882 [ERROR] asyncio: Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<send_broadcast() done, defined at /home/claude/work/telegram_userbot/main.py:32> exception=OperationalError('no such table: audit_log')>
+Traceback (most recent call last):
+  File "/home/claude/work/telegram_userbot/main.py", line 61, in send_broadcast
+    db.add_audit_log(
+  File "/home/claude/work/telegram_userbot/db.py", line 308, in add_audit_log
+    c.execute("INSERT INTO audit_log (owner_id, action, details, created_at) VALUES (?, ?, ?, ?)",
+sqlite3.OperationalError: no such table: audit_log
+2026-08-30 10:00:16,871 [ERROR] main: handle_avto_command xato
+Traceback (most recent call last):
+  File "/home/claude/work/telegram_userbot/main.py", line 89, in handle_avto_command
+    raise ValueError("4 ta qism kerak: chatlar | matn | soni | sekund")
+ValueError: 4 ta qism kerak: chatlar | matn | soni | sekund
+2026-08-30 10:00:16,872 [ERROR] main: handle_avto_command xato
+Traceback (most recent call last):
+  File "/home/claude/work/telegram_userbot/main.py", line 103, in handle_avto_command
+    raise ValueError("takrorlash soni kamida 1 bo'lishi kerak")
+ValueError: takrorlash soni kamida 1 bo'lishi kerak
+2026-08-30 10:00:16,873 [ERROR] userbot: send_to_chat kutilmagan xato: chat=@bad_chat
+Traceback (most recent call last):
+  File "/home/claude/work/telegram_userbot/userbot.py", line 247, in send_to_chat
+    await client.send_message(chat_id, text)
+  File "/usr/lib/python3.12/unittest/mock.py", line 2273, in _execute_mock_call
+    result = await effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/work/telegram_userbot/_simulate.py", line 41, in fake_send_message
+    raise Exception("Kanal topilmadi")
+Exception: Kanal topilmadi
+2026-08-30 10:00:36,664 [ERROR] asyncio: Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<send_broadcast() done, defined at /home/claude/work/telegram_userbot/main.py:32> exception=OperationalError('no such table: audit_log')>
+Traceback (most recent call last):
+  File "/home/claude/work/telegram_userbot/main.py", line 61, in send_broadcast
+    db.add_audit_log(
+  File "/home/claude/work/telegram_userbot/db.py", line 308, in add_audit_log
+    c.execute("INSERT INTO audit_log (owner_id, action, details, created_at) VALUES (?, ?, ?, ?)",
+sqlite3.OperationalError: no such table: audit_log
+2026-08-30 10:00:37,652 [ERROR] main: handle_avto_command xato
+Traceback (most recent call last):
+  File "/home/claude/work/telegram_userbot/main.py", line 89, in handle_avto_command
+    raise ValueError("4 ta qism kerak: chatlar | matn | soni | sekund")
+ValueError: 4 ta qism kerak: chatlar | matn | soni | sekund
+2026-08-30 10:00:37,653 [ERROR] main: handle_avto_command xato
+Traceback (most recent call last):
+  File "/home/claude/work/telegram_userbot/main.py", line 103, in handle_avto_command
+    raise ValueError("takrorlash soni kamida 1 bo'lishi kerak")
+ValueError: takrorlash soni kamida 1 bo'lishi kerak
+2026-08-30 10:00:37,653 [ERROR] userbot: send_to_chat kutilmagan xato: chat=@bad_chat
+Traceback (most recent call last):
+  File "/home/claude/work/telegram_userbot/userbot.py", line 247, in send_to_chat
+    await client.send_message(chat_id, text)
+  File "/usr/lib/python3.12/unittest/mock.py", line 2273, in _execute_mock_call
+    result = await effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/work/telegram_userbot/_simulate.py", line 41, in fake_send_message
+    raise Exception("Kanal topilmadi")
+Exception: Kanal topilmadi
+2026-08-30 10:00:41,660 [ERROR] asyncio: Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<send_broadcast() done, defined at /home/claude/work/telegram_userbot/main.py:32> exception=OperationalError('no such table: audit_log')>
+Traceback (most recent call last):
+  File "/home/claude/work/telegram_userbot/main.py", line 61, in send_broadcast
+    db.add_audit_log(
+  File "/home/claude/work/telegram_userbot/db.py", line 308, in add_audit_log
+    c.execute("INSERT INTO audit_log (owner_id, action, details, created_at) VALUES (?, ?, ?, ?)",
+sqlite3.OperationalError: no such table: audit_log
